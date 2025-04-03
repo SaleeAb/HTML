@@ -1,0 +1,43 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    color: rgb(158, 158, 158);
+    border-color: black;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p{
+    color: rgb(158, 158, 158);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: larger;
+    text-align: left;
+    width: 600px;
+    border-color: black;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+    
+
+    
+    
+    
+}
+img {
+    display: block;
+    margin-left: auto;
+    width: 100px;
+    
+  }
+
+body{
+    background-color: #a1f5f5;
+}
