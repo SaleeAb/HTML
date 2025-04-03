@@ -1,31 +1,33 @@
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+
     
-    color: rgb(158, 158, 158);
-    border-color: black;
-    border: 2px solid black;
-    padding: 10px;
-    background-color: white;
+    text-align: center;
     
 }
 
 h2{
     font-family: Arial, Helvetica, sans-serif;
-}
-
-
-p{
-    color: rgb(158, 158, 158);
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: larger;
     text-align: left;
     width: 600px;
-    border-color: black;
-    border: 2px solid black;
-    padding: 10px;
-    background-color: white;
-    
+    font-size: 25px;
+}
+
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: larger;
+    text-align: left;
+    width: 600px;
+    font-size: 25px;
+
 
     
     
@@ -33,11 +35,35 @@ p{
 }
 img {
     display: block;
-    margin-left: auto;
+    margin: auto;
     width: 100px;
+    align-items: center;
+    
     
   }
 
-body{
-    background-color: #a1f5f5;
+  body {
+    border: 10px solid black; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+.page1{
+    margin-top: auto;
+    margin-left: auto;
+    color: black;
+
+}
+summary{
+    font-family: arial;
+    font-size: 20px;
+}
+dialog{
+    margin-left: 250px;
+    margin-top: 450px;
+    
+}
+nav a {
+    color: black;
+
 }
