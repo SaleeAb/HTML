@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kommentti</title>
-    <link rel="stylesheet" href="kommentti.css">
-    <nav>
-        <a href="CV.html"></a>
-    </nav>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Kommentti</title>
+<link rel="stylesheet" href="kommentti.css">
+<nav>
+ <nav>
+<a href="cv.html">CV</a>
+</nav>   
 </head>
 
 <body>
-    <h1>Kommentit</h1>
-    <h2>Kommentoi!</h2>
+<form action="kommentti.php" method="post">
+<label for="message">Viestisi:</label>
+<textarea id="message" name="message" rows="4" cols="50" value="Kirjoita tähän">
+</textarea>
+<div class="keski">
+<label for="sähköposti"></label>
+<input type="email" id="sähköposti" value="sähköposti">
+<label for="ikä">  Ikä</label>
+<input type="date" id="ika" value="ikä">
+<h2>Tärkeää käyttöehtosopimus!</h2>
+<details>
+    <summary>Infoa</summary>
+    <p>Hyväksyt, että tietojasi voidaan käyttää markkinoinnissa.</p>
+    <label for="checkbox">Hyväksy</label>
+    <input type="checkbox" name="Hyväksyn" id="Hyväksy">
+    <label for="checkbox">Hylkää</label>
+    <input type="checkbox" name="Hylkään" id="Hylkää.">
+</details>
+<input type="submit" value="Lähetä tiedot.">
+</div>
+</form>
 
     
 </body>
