@@ -10,3 +10,13 @@ nav a {
     color: black;
 
 }
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: larger;
+    text-align: left;
+    width: 600px;
+    font-size: 25px;
+}
