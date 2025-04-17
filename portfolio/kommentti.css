@@ -4,7 +4,7 @@ body {
     border: 10px solid black; 
     margin: 0; 
     padding: 20px; 
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(132, 191, 241, 0.589);
 }
 nav a {
     color: black;

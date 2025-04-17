@@ -1,0 +1,32 @@
+body{
+    border: 10px solid rgb(238, 0, 0); 
+    margin: 0; 
+    padding: 20px; 
+    
+     
+ 
+
+}
+
+.S{
+    height: 1000px;
+    width: 300px;
+    border:10px solid rgba(187, 238, 175, 0.452)
+    
+    
+}
+
+
+.P{
+    margin-left: 600px;
+    align-items: center;
+    text-align: center;
+    height: 1000px;
+    width: 300px;
+    border:10px solid rgba(187, 238, 175, 0.452)            
+    
+}
+
+
+
+
