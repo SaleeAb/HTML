@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Kommentti</title>
- <title>Keskustelu</title>
- <title>sosiaalisuus</title>
- <title>Abdalah Joben tekemä sivu</title>
-<link rel="stylesheet" href="../index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kommentti</title>
+  <link rel="stylesheet" href="../index.css" />
 </head>
 
 <body>
-    <nav><a href="flex.html">Flex harjoitus</a></nav>
-    <nav >
-        <a href="../index.html">CV</a>
-    </nav>
 
-    <nav><a href="index.html">Tehtävä sivu</a></nav>
-    <nav><a href="mediasivu.html">Media sivu</a></nav>
-    
+<div class="Links">
     <nav>
-        <a href="../Työkokemus.html">Työkokemus</a>
+    <a href="../index.html">CV</a>
+    <a href="../Työkokemus.html">Työkokemus</a>
+    <a href="index.html">Tehtävä</a>
     </nav>
+  
+</div>
 
 
 
+<nav>
+    <a href="kommentt.html">Kommentti</a>
+    <a href="mediasivu.html">Media</a>
 
-<form action="kommentti.php" method="post">
+</nav>
+  
 
-<button onclick="document.getElementById('dlg').showModal()">Avaa dialog</button>
-    <dialog id="dlg">
-        Kommentoi.
-        <textarea id="message" name="message" rows="4" cols="50" value="Kirjoita tähän">
-        </textarea>
 
-<div class="keski">
-<label for="sähköposti"></label>
+<button type="button" onclick="document.getElementById('dlg').showModal()">Avaa dialog</button>
 
-<input type="email" id="sähköposti" value="sähköposti">
+<dialog id="dlg">
+  <form action="kommentti.php" method="post">
+    <p>Kommentoi.</p>
 
-<label for="ikä">  Ikä</label>
+    <textarea id="message" name="message" rows="4" cols="50">Kirjoita tähän</textarea>
 
-<input type="date" id="ika" value="ikä">
+    <div class="keski">
+      <label for="sähköposti">Sähköposti</label>
+      <input type="email" id="sähköposti" name="sähköposti" required />
 
-<h2>Tärkeää käyttöehtosopimus!</h2>
-<details>
-    <summary>Infoa</summary>
+      <label for="ika">Ikä</label>
+      <input type="date" id="ika" name="ika" required />
 
-    <p>Hyväksyt, että tietojasi voidaan käyttää markkinoinnissa.</p>
+      <h2>Tärkeää käyttöehtosopimus!</h2>
+      <details>
+        <summary>Infoa</summary>
+        <p>Hyväksyt, että tietojasi voidaan käyttää markkinoinnissa.</p>
 
-    <label for="checkbox">Hyväksy</label>
+        <label for="Hyväksy">Hyväksy</label>
+        <input type="checkbox" name="Hyväksyn" id="Hyväksy" />
 
-    <input type="checkbox" name="Hyväksyn" id="Hyväksy">
+        <label for="Hylkää">Hylkää</label>
+        <input type="checkbox" name="Hylkään" id="Hylkää" />
+      </details>
 
-    <label for="checkbox">Hylkää</label>
-
-    <input type="checkbox" name="Hylkään" id="Hylkää.">
-</details>
-<input type="submit" value="Lähetä tiedot.">
-<button onclick="document.getElementById('dlg').close()">Sulje</button>
+      <input type="submit" value="Lähetä tiedot" />
+      <button type="button" onclick="document.getElementById('dlg').close()">Sulje</button>
+    </div>
+  </form>
 </dialog>
 
 
-</div>
-</form>
 
-<hr>
+  <hr />
 
-<h2>Poromaa-Anne@yahoo.com Ikä: 27</h2>
-<p>Hyvä CV! Mutta jos haluat tehdä siitä vielä vaikuttavamman, niin suosittelen panostamaan visuaalisuuteen. Voit kokeilla lisätä värejä tai parantaa fonttivalintoja. Visuaalinen ilme on todella tärkeä, erityisesti jos haet luovaa tai visuaalista työtä. Jos tarvitset apua, voin auttaa mielelläni!
-</p>
-<hr>
-<h2>KoskinenAntuwan@gmail.com ikä:32</h2>
-<p>En tiennyt, että käyt salilla! Se on tosi hienoa, että panostat terveyteesi. Itse olen myös alkanut käymään salilla viime aikoina ja huomannut, kuinka paljon se parantaa jaksamista arjessa. Onko sinulla jotain suosikkiharjoituksia tai saliohjelmia, joita suosittelisit?</p>
-<hr>
+  <h2>Poromaa-Anne@yahoo.com – Ikä: 27</h2>
+  <p>Hyvä CV! Mutta jos haluat tehdä siitä vielä vaikuttavamman, niin suosittelen panostamaan visuaalisuuteen...</p>
+  <hr />
 
-<h2>Halttujuuso@gmail.com ikä: 18</h2>
-<p>Panosta väreihin! Se on todella tärkeä osa brändiäsi ja visuaalista ilmettä. Mieti, mitkä värit ilmentävät parhaiten sitä, mitä haluat viestiä. Jos teet verkkosivua tai markkinointimateriaalia, oikeat värit voivat tehdä suuren eron. Jos tarvitset vinkkejä värien psykologiasta, voin auttaa!</p>
-<hr>
+  <h2>KoskinenAntuwan@gmail.com – Ikä: 32</h2>
+  <p>En tiennyt, että käyt salilla! Se on tosi hienoa, että panostat terveyteesi...</p>
+  <hr />
 
-<h2>KorhonenLeena123@gmail.com Ikä: 29</h2>
-<p>hei, huomasin, että olet juuri päivittänyt CV:si! Hyvältä näyttää, mutta uskon, että voisit tuoda vielä enemmän esiin omia vahvuuksiasi. Lisää tarkempia esimerkkejä projekteista, joissa olet ollut mukana, ja kerro, miten ne ovat kehittäneet taitojasi. Se tekee CV:stä vielä vakuuttavamman.</p>
+  <h2>Halttujuuso@gmail.com – Ikä: 18</h2>
+  <p>Panosta väreihin! Se on todella tärkeä osa brändiäsi ja visuaalista ilmettä...</p>
+  <hr />
 
-<hr>
+  <h2>KorhonenLeena123@gmail.com – Ikä: 29</h2>
+  <p>Hei, huomasin, että olet juuri päivittänyt CV:si! Hyvältä näyttää...</p>
+  <hr />
 
-<h2>VainionMarkus@outlook.com Ikä:58</h2>
-<p>Hei! Näyttää siltä, että olet todella panostanut omaan kehitykseesi, mutta ehkä voisit myös tarkastella CV:n ulkoasua. Värimaailman ja typografian säätö voi tehdä siitä entistä houkuttelevamman. Jos tarvitset ideoita, voin auttaa niiden valinnassa</p>
+  <h2>VainionMarkus@outlook.com – Ikä: 58</h2>
+  <p>Hei! Näyttää siltä, että olet todella panostanut omaan kehitykseesi...</p>
+
 </body>
-
 
 </html>
