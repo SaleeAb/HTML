@@ -1,133 +1,117 @@
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0 auto;
-    padding: 40px;
-    max-width: 800px;
-    border: none;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px;
 }
 
-
-h1 {
-    font-size: 2.5rem;
-    color: #222;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-    color: #444;
-    margin-bottom: 1rem;
-}
-
-
-p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
+h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
+h2 { font-size: 1.5rem; color: #444; margin-bottom: 1rem; }
+p { font-size: 1.125rem; line-height: 1.6; margin-bottom: 1rem; }
 
 img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100px;
+  display: block;
+  margin: 20px auto;
+  max-width: 100px;
+}
+.container2{
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "subnav content"
+  "footer footer";
+  gap: 5px;
+  padding: 5px;
+
+
 }
 
+
+.container2 > div.Linkss{
+  grid-area: nav;
+}
+
+.container2 > div.content{
+  grid-area: content;
+}
+
+.container2 > div.subnav{
+  grid-area: subnav;
+
+}
+.container > .subnav > nav {
+  display: flex;           /* Makes children (links) align in a row */
+  flex-direction: row;     /* Explicitly set to row (default) */
+  gap: 15px;              /* Adds space between links */
+  padding: 10px 0;        /* Optional: Adds padding above/below links */
+  list-style: none;
+
+}
+
+
+.container> div {
+
+  padding: 10px;
+}
+.container> div.content {
+  grid-area: "content";
+}
+
+.container> div.Links {
+  grid-area:"nav"
+}
+.container> h1 {
+  grid-area:"header"
+}
 
 .Links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-  }
-  
-  .Links a {
-    display: inline-block;
-    padding: 10px 18px;
-    background-color: #2c3e50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .Links a:hover {
-    background-color: #3498db;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .Links a:active {
-    transform: translateY(0);
-  }
-  
-  /* Responsive design */
-  @media screen and (max-width: 600px) {
-    .Links {
-      flex-direction: column;
-      align-items: center;
-    }
-    
-    .Links a {
-      width: 80%;
-      text-align: center;
-    }
-  }
-
-
-button,
-input[type="submit"] {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: background-color 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px 0;
 }
 
-button:hover {
-    background-color: #005f99;
+.Links a {
+  padding: 10px 18px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
 }
 
-button:active {
-    background-color: #004f80;
+.Links a:hover { background: #3498db; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+
+button, input[type="submit"] {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
+button:hover { background: #005f99; }
+button:active { background: #004f80; }
 
 input {
-    background-color: #e0f7ff;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  background: #e0f7ff;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-
-summary {
-    font-size: 1rem;
-    font-weight: 500;
-    margin-top: 1rem;
-}
-
-dialog {
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-
-.page1 {
-    color: #222;
-    margin-top: 2rem;
+@media (max-width: 600px) {
+  .Links { flex-direction: column; align-items: center; }
+  .Links a { width: 80%; text-align: center; }
 }
