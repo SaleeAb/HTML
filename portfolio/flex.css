@@ -51,3 +51,103 @@ img {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   margin: 20px 0;
 }
+
+.Links a {
+  padding: 10px 18px;
+  background: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  
+}
+
+.Links a:hover { background: #3498db; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+
+button, input[type="submit"] {
+  background: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover { background: #005f99; }
+button:active { background: #004f80; }
+
+input {
+  background: #e0f7ff;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .Links { flex-direction: column; align-items: center; }
+  .Links a { width: 80%; text-align: center; }
+}
+
+
+.container2 {
+  display: grid;
+  grid-template-areas:
+  "header header"
+  "nav nav"
+  "subnav content"
+  "footer footer";
+  grid-template-columns: 200px 1fr;
+  
+}
+
+
+.container2 > div.nav{
+  grid-area: nav;
+}
+
+.container2 > div.content{
+  grid-area: content;
+}
+
+
+.container2 > div.subnav {
+grid-area: subnav;
+
+  
+
+}
+
+.container2 > div.header {
+  grid-area: header;
+
+}
+
+.container2 > div.content {
+  grid-area: content;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+}
+
+.container2 > div.footer {
+  grid-area: footer;
+}
+
+
+
+
+.container> div {
+
+  padding: 10px;
+}
+.container> div.content {
+  grid-area: content;
+}
+
+.container> div.Links {
+  grid-area: nav;
+}
+.container> h1 {
+  grid-area: header;
+}
+

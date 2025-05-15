@@ -4,30 +4,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Kuvaus" content="Harjoitussivu joka näyttää siltä, että voi kommentoida mutta ei oikeasti voi">
+  <meta name="avainsanat" content="HTML, CSS, JavaScript">
+  <meta name="Tekijä" content="Abdalah Jobe">
   <title>Kommentti</title>
   <link rel="stylesheet" href="../index.css" />
+  <script src="kommentti.js" defer></script>
 </head>
 
 <body>
-
-<div class="Links">
+<div class="container2">
+  <div class="nav"><div class="Links">
     <nav>
-    <a href="../index.html">CV</a>
-    <a href="../Työkokemus.html">Työkokemus</a>
-    <a href="index.html">Tehtävä</a>
+        <a href="index.html">CV</a>
+        <a href="../työkokemus.html">Portfolio</a>
     </nav>
-  
+</div>
 </div>
 
-
-
-<nav>
-    <a href="kommentt.html">Kommentti</a>
+<div class="subnav">
+<div class="Links">
+    <a href="flex.html">Flex harjoitus</a>
+    <a href="index.html">Tehtävä sivu</a>
     <a href="mediasivu.html">Media</a>
+    <a href="Muuttujia ja tietotyyppejä.html">Muuttujia ja tietotyyppejä</a>
 
-</nav>
+    
+</div>
+</div>
+
   
-
+<div class="content">
 
 <button type="button" onclick="document.getElementById('dlg').showModal()">Avaa dialog</button>
 
@@ -47,16 +54,28 @@
       <h2>Tärkeää käyttöehtosopimus!</h2>
       <details>
         <summary>Infoa</summary>
-        <p>Hyväksyt, että tietojasi voidaan käyttää markkinoinnissa.</p>
+        <p>Hyväksyt, että tietojasi voidaan käyttää markkinoinnissa vastaa myös onko tekstisi kommentti vai kysymys.</p>
+
+        <label for="kommentti">Kommentti</label>
+        <input type="checkbox" id="kommentti">
+
+        <br>
+        <br>
+
+        <label for="kysymys">Kysymys</label>
+        <input type="checkbox" name="" id="kysymys">
+
+        <br>
+        <br>
 
         <label for="Hyväksy">Hyväksy</label>
-        <input type="checkbox" name="Hyväksyn" id="Hyväksy" />
+        <input type="checkbox" name="Hyväksyn" id="Hyvaksy" />
 
         <label for="Hylkää">Hylkää</label>
-        <input type="checkbox" name="Hylkään" id="Hylkää" />
+        <input type="checkbox" name="Hylkään" id="Hylkaa" />
       </details>
 
-      <input type="submit" value="Lähetä tiedot" />
+      <input type="submit" value="Lähetä tiedot" id="laheta" onclick="send()">
       <button type="button" onclick="document.getElementById('dlg').close()">Sulje</button>
     </div>
   </form>
@@ -85,6 +104,8 @@
   <h2>VainionMarkus@outlook.com – Ikä: 58</h2>
   <p>Hei! Näyttää siltä, että olet todella panostanut omaan kehitykseesi...</p>
 
+</div>
+</div>
 </body>
 
 </html>

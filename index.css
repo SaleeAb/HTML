@@ -1,3 +1,61 @@
+@font-face {
+  font-family: "abFont";
+  src: url(fonts/Municipal.ttf);
+}
+
+@font-face {
+  font-family: "pfont";
+  src: url(fonts/Newsreader-VariableFont_opsz\,wght.ttf);
+}
+
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 32px;
+
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+
+}
+
+
+@media (max-width: 640px) {
+  body{
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+
+    h3 {
+      font-size: 22px;
+    
+    }
+
+    h4 {
+      font-size: 18px;
+
+    }
+  }
+
+}
+
+
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f4f4f4;
@@ -7,30 +65,35 @@ body {
   max-width: 800px;
 }
 
-h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; }
-h2 { font-size: 1.5rem; color: #444; margin-bottom: 1rem; }
-p { font-size: 1.125rem; line-height: 1.6; margin-bottom: 1rem; }
+h1 {
+  font-family: "abFont";
+  text-align: center;
+
+}
+
+p {
+  font-family: "pFont";
+}
 
 img {
   display: block;
   margin: 20px auto;
   max-width: 100px;
 }
-.container2{
+
+.container2 {
   display: grid;
   grid-template-areas:
   "header header"
   "nav nav"
   "subnav content"
   "footer footer";
-  gap: 5px;
-  padding: 5px;
-
-
+  grid-template-columns: 200px 1fr;
+  
 }
 
 
-.container2 > div.Linkss{
+.container2 > div.nav{
   grid-area: nav;
 }
 
@@ -38,18 +101,30 @@ img {
   grid-area: content;
 }
 
-.container2 > div.subnav{
-  grid-area: subnav;
+
+.container2 > div.subnav {
+grid-area: subnav;
+
+  
 
 }
-.container > .subnav > nav {
-  display: flex;           /* Makes children (links) align in a row */
-  flex-direction: row;     /* Explicitly set to row (default) */
-  gap: 15px;              /* Adds space between links */
-  padding: 10px 0;        /* Optional: Adds padding above/below links */
-  list-style: none;
+
+.container2 > div.header {
+  grid-area: header;
 
 }
+
+.container2 > div.content {
+  grid-area: content;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+}
+
+.container2 > div.footer {
+  grid-area: footer;
+}
+
+
 
 
 .container> div {
@@ -57,15 +132,18 @@ img {
   padding: 10px;
 }
 .container> div.content {
-  grid-area: "content";
+  grid-area: content;
 }
 
 .container> div.Links {
-  grid-area:"nav"
+  grid-area: nav;
 }
 .container> h1 {
-  grid-area:"header"
+  grid-area: header;
 }
+
+
+
 
 .Links {
   display: flex;
