@@ -193,3 +193,7 @@ input {
   .Links { flex-direction: column; align-items: center; }
   .Links a { width: 80%; text-align: center; }
 }
+
+table, th, td {
+  border:1px solid black;
+}
